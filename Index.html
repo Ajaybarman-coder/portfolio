@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Video Editing Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+  </div>
+
+  <header class="container">
+    <nav class="glass nav">
+      <div class="logo">YourName</div>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn small">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero glass">
+      <p class="pill">Available for freelance • Remote</p>
+      <h1>Video Editor & Motion Graphics Designer</h1>
+      <p class="sub">
+        Clean cuts, strong pacing, modern motion. I edit reels, YouTube, ads, and brand films.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="#work">View Portfolio</a>
+        <a class="btn ghost" href="#" target="_blank" rel="noreferrer">Watch Showreel</a>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="work" class="section">
+      <div class="section-head">
+        <h2>Portfolio</h2>
+        <p>Filter by category</p>
+      </div>
+
+      <div class="filters glass">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="video-editing">Video Editing</button>
+        <button class="filter" data-filter="motion-graphics">Motion Graphics</button>
+      </div>
+
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card glass" data-category="video-editing">
+          <div class="thumb">
+            <img src="https://picsum.photos/800/500?random=1" alt="Project thumbnail" />
+          </div>
+          <div class="card-body">
+            <h3>Brand Reel — Fitness</h3>
+            <p class="meta">Premiere Pro • 2026</p>
+            <div class="tags">
+              <span>Video Editing</span>
+              <span>Reels</span>
+              <span>Color</span>
+            </div>
+            <a class="card-link" href="#" target="_blank" rel="noreferrer">Watch →</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card glass" data-category="motion-graphics">
+          <div class="thumb">
+            <img src="https://picsum.photos/800/500?random=2" alt="Project thumbnail" />
+          </div>
+          <div class="card-body">
+            <h3>Explainer Motion — App UI</h3>
+            <p class="meta">After Effects • 2026</p>
+            <div class="tags">
+              <span>Motion Graphics</span>
+              <span>2D</span>
+              <span>UI</span>
+            </div>
+            <a class="card-link" href="#" target="_blank" rel="noreferrer">Watch →</a>
+          </div>
+        </article>
+
+        <!-- Add more cards and set data-category accordingly -->
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="glass about">
+        <h2>About</h2>
+        <p>
+          I’m a video editor and motion designer focused on fast-paced content, cinematic cuts,
+          and clean motion systems for brands and creators.
+        </p>
+        <div class="tags big">
+          <span>Premiere Pro</span><span>After Effects</span><span>DaVinci Resolve</span>
+          <span>Photoshop</span><span>CapCut</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="glass contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <p>
+          Links:
+          <a href="#" target="_blank" rel="noreferrer">YouTube</a> •
+          <a href="#" target="_blank" rel="noreferrer">Instagram</a> •
+          <a href="#" target="_blank" rel="noreferrer">Behance</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
